@@ -1,0 +1,29 @@
+{
+"kind": "singleType",
+"collectionName": "pagina_contactos",
+"info": {
+"singularName": "pagina-contacto",
+"pluralName": "pagina-contactos", 
+"displayName": "Página Contacto",
+"description": "Modelo para la página de Contacto."
+},
+"options": {
+"draftAndPublish": true
+},
+  "attributes": {
+    "heroBadge": { "type": "string" },
+    "heroHeading": { "type": "string" },
+    "heroDescription": { "type": "text" },
+    "heroBackgroundImage": { "type": "media", "multiple": false },
+
+    "contactInfo": { "type": "component", "repeatable": true, "component": "content.contact_info_item" },
+
+    "procedureTitle": { "type": "string" },
+    "procedureIntro": { "type": "text" },
+    "procedureSteps": { "type": "component", "repeatable": true, "component": "content.procedure_step" },
+
+    "guarantees": { "type": "component", "repeatable": true, "component": "content.cta_info_card" },
+
+    "formIntroText": { "type": "text" }
+  }
+}

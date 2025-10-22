@@ -1,0 +1,137 @@
+{
+  "home-page": {
+    "heroTagline": "EN TIEMPO Y FORMA",
+    "heroHeading": "ÚNETE A RUNBOX",
+    "heroSubheading": "OLVÍDATE DE LA LOGÍSTICA EN EL ENVÍO DE TUS PEDIDOS",
+    "heroDescription": "Nos adaptamos a las necesidades de tu empresa, pyme o emprendimiento con soluciones personalizadas.",
+    "heroPrimaryCTA": "Contratar servicio",
+    "heroSecondaryCTA": "Seguir un envío",
+    "featuresSectionTitle": "¿Por qué elegirnos?",
+    "featuresSectionSubtitle": "Equipo humano. Tecnología con el respaldo de un servicio cercano y confiable.",
+    "features": [
+      { "icon": "CheckCircle", "title": "Experiencia comprobada", "description": "Más de 20 años de experiencia garantizan resultados excepcionales" },
+      { "icon": "Truck", "title": "Tarifa única", "description": "Sin sorpresas en los costos, planifica tu presupuesto fácilmente" },
+      { "icon": "Clock", "title": "Seguimiento en tiempo real", "description": "Conoce la ubicación exacta de tu envío en cada momento" }
+    ],
+    "ctaSectionBackground": "primary",
+    "ctaHeading": "Comienza hoy mismo",
+    "ctaDescription": "Únete a las empresas que confían en Runbox para sus envíos.",
+    "ctaButtonText": "Contratar servicio",
+    "ctaInfoCards": [
+      { "title": "Cobertura especializada", "description": "Regiones Metropolitana, Valparaíso y Bio Bio con tarifa única.", "linkText": "Ver cobertura completa", "linkUrl": "tarifa-unica" },
+      { "title": "Experiencia consolidada", "description": "Conoce nuestra historia y el equipo detrás de Runbox.", "linkText": "Conocer el equipo", "linkUrl": "quienes-somos" }
+    ]
+  },
+
+  "pagina-quienes-somos": {
+    "heroBadge": "Quiénes Somos",
+    "heroHeading": "Líderes en logística en Chile",
+    "heroDescription": "Somos una empresa chilena que conoce el mercado de la última milla. Nos adaptamos a las necesidades de tu empresa, pyme o emprendimiento, buscando siempre la eficiencia y entregando un servicio de primer nivel.",
+    "ourHistoryTitle": "Nuestra historia comenzó en Santiago",
+    "ourHistoryContent": "Con más de 20 años de experiencia, RunBox nació como una empresa familiar en Santiago y hasta hoy mantenemos ese mismo espíritu cercano y humano. Nuestros primeros pasos fueron en el mundo de los bebestibles, y con el tiempo fuimos expandiendo nuestra operación hasta convertirnos en especialistas en e-commerce y medicamentos. Uno de nuestros grandes hitos fue entrar al mundo farmacéutico, cumpliendo con la normativa del ISP y ofreciendo soluciones de trazabilidad y control.",
+    "values": [
+      { "icon": "Target", "title": "Misión", "description": "En RunBox conectamos a personas y empresas a través de entregas seguras, confiables y humanas." },
+      { "icon": "Heart", "title": "Compromiso", "description": "Cuidamos cada envío como si fuera nuestro, garantizando la máxima seguridad y puntualidad." },
+      { "icon": "Shield", "title": "Confianza", "description": "Construyendo relaciones sólidas y duraderas con nuestros clientes." }
+    ],
+    "whyChooseUsTitle": "¿Por qué elegir Runbox?",
+    "whyChooseUsDescription": "Equipo humano. Tecnología con el respaldo de un servicio cercano y confiable.",
+    "whyChooseUsFeatures": [
+      { "icon": "CheckCircle", "title": "Experiencia Comprobada", "description": "Experiencia sólida perfeccionando nuestros procesos de logística y distribución en Chile." },
+      { "icon": "Truck", "title": "Cobertura Especializada", "description": "Enfoque en las regiones más importantes: Metropolitana, Valparaíso y Bio Bio." },
+      { "icon": "Award", "title": "Resultados Garantizados", "description": "Resultados consistentes y confiables que respaldan el crecimiento de tu negocio." }
+    ],
+    "teamTitle": "Nuestro equipo",
+    "teamSubtitle": "Profesionales comprometidos con la excelencia en cada entrega",
+    "team": [
+      { "name": "Carlos Mendoza", "position": "Director General", "experience": "Especialista en logística", "photo": null },
+      { "name": "María González", "position": "Gerente de Operaciones", "experience": "Experta en distribución", "photo": null },
+      { "name": "Roberto Silva", "position": "Jefe de Tecnología", "experience": "Especialista en sistemas de tracking", "photo": null }
+    ]
+  },
+
+  "pagina-contacto": {
+    "heroBadge": "Contacto",
+    "heroHeading": "Conversemos sobre tu proyecto logístico",
+    "heroDescription": "Nuestros expertos están listos para diseñar la solución perfecta para tu empresa.",
+    "contactInfo": [
+      { "icon": "Phone", "title": "Teléfono / WhatsApp", "value": "+56 9 8669 5083", "description": "Lunes a Viernes, 9:00 - 18:00" },
+      { "icon": "Mail", "title": "Email", "value": "m.angeles@runbox.cl", "description": "Respuesta en menos de 2 horas" },
+      { "icon": "MapPin", "title": "Oficina Principal", "value": "Las Condes, Santiago", "description": "Atención con cita previa" },
+      { "icon": "Globe", "title": "Horario de Atención", "value": "Lunes a Viernes 9:00 - 17:00", "description": "Sábados 9:00 - 15:00" }
+    ],
+    "procedureTitle": "Nuestro proceso de contratación",
+    "procedureIntro": "Así es como trabajamos para entregarte la mejor propuesta logística:",
+    "procedureSteps": [
+      { "number": "01", "title": "Envía tu consulta", "description": "Completa el formulario con los detalles de tu solicitud.", "icon": "MessageSquare", "color": "primary" },
+      { "number": "02", "title": "Análisis personalizado", "description": "Nuestro equipo analiza tu caso.", "icon": "FileText", "color": "secondary" },
+      { "number": "03", "title": "Propuesta detallada", "description": "Recibes una propuesta completa.", "icon": "Calculator", "color": "primary" },
+      { "number": "04", "title": "Respuesta rápida", "description": "Te contactamos en máximo 2 horas.", "icon": "Clock", "color": "secondary" }
+    ],
+    "guarantees": [
+      { "title": "Respuesta garantizada en 2 horas", "description": "" },
+      { "title": "Propuesta sin compromiso", "description": "" },
+      { "title": "Asesoría personalizada gratuita", "description": "" },
+      { "title": "Precios transparentes y competitivos", "description": "" }
+    ],
+    "formIntroText": "* Campos obligatorios. Al enviar este formulario aceptas nuestros términos y condiciones."
+  },
+
+  "pagina-tarifa-unica": {
+    "heroBadge": "Tarifa Única",
+    "heroHeading": "Una tarifa, sin complicaciones",
+    "heroDescription": "Con una tarifa única, no hay sorpresas, lo que facilita la planificación financiera.",
+    "benefits": [
+      { "icon": "Calculator", "title": "Planificación financiera simple", "description": "Sin sorpresas en los costos." },
+      { "icon": "Shield", "title": "Transparencia total", "description": "No hay costos ocultos ni variaciones." },
+      { "icon": "TrendingUp", "title": "Enfoque en tu negocio", "description": "Concéntrate en hacer crecer tu empresa." }
+    ],
+    "coverageIntroTitle": "Cobertura especializada",
+    "coverageIntroText": "Enfocados en las regiones más importantes de Chile",
+    "regions": [
+      { "region": "Región Metropolitana", "mainCities": ["Santiago","Maipú","Las Condes","Providencia"], "allCities": ["Santiago","Maipú","Las Condes","Providencia","Ñuñoa"], "delivery": "24-48 hrs", "color": "green" },
+      { "region": "Región de Valparaíso", "mainCities": ["Valparaíso","Viña del Mar"], "allCities": ["Valparaíso","Viña del Mar","Quilpué"], "delivery": "24-48 hrs", "color": "blue" },
+      { "region": "Región del Bio Bio", "mainCities": ["Concepción","Talcahuano"], "allCities": ["Concepción","Talcahuano","Chillán"], "delivery": "48-72 hrs", "color": "purple" }
+    ],
+    "mapImage": null,
+    "stats": { "regionsActive": 3, "vehiclesOnRoute": 50, "avgDeliveryDays": 2 }
+  },
+
+  "pagina-seguimiento": {
+    "heroBadge": "Seguimiento",
+    "heroHeading": "Seguir mi pedido",
+    "heroDescription": "Ingresa tu código de seguimiento y conoce la ubicación exacta de tu envío en tiempo real.",
+    "trackingInputPlaceholder": "RB-2024-CHI-XXXX",
+    "trackingHelpText": "Formato: RB-2024-CHI-XXXX (ejemplo: RB-2024-CHI-3847)",
+    "demoTrackingData": {
+      "code": "RB-2024-CHI-3847",
+      "status": "En tránsito",
+      "currentLocation": "Centro de Distribución Santiago",
+      "destination": "Valparaíso, Región de Valparaíso",
+      "estimatedDelivery": "Hoy, 16:30 PM",
+      "progress": 75
+    },
+    "features": [
+      { "icon": "Smartphone", "title": "Seguimiento móvil", "description": "Rastrea tus paquetes desde cualquier dispositivo." },
+      { "icon": "Bell", "title": "Notificaciones automáticas", "description": "Recibe actualizaciones por SMS y email." },
+      { "icon": "MapPin", "title": "Ubicación en tiempo real", "description": "Conoce la ubicación exacta de tu paquete." }
+    ],
+    "helpSectionTitle": "¿No encuentras tu paquete?",
+    "helpSectionText": "Si tienes problemas para encontrar tu envío o el código no funciona, nuestro equipo de atención al cliente está aquí para ayudarte."
+  },
+
+  "blog-posts": [
+    {
+      "title": "Bienvenidos al Blog de RunBox: más que logística, confianza en cada entrega",
+      "slug": "bienvenidos-al-blog-de-runbox",
+      "excerpt": "En RunBox creemos que la logística no es solo un servicio: es la confianza que se genera en cada entrega.",
+      "content": "En RunBox creemos que la logística no es solo un servicio: es la confianza que se genera en cada entrega. Después de más de 20 años de experiencia...",
+      "author": "Equipo RunBox",
+      "date": "2025-01-15",
+      "readTime": "3 min",
+      "category": "Bienvenida",
+      "tags": ["Logística","Confianza","Experiencia del Cliente"],
+      "featured": true
+    }
+  ]
+}

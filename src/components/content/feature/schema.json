@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_features",
+  "info": {
+    "singularName": "feature",
+    "pluralName": "features",
+    "displayName": "Feature",
+    "description": "Simple feature with icon, title and description"
+  },
+  "attributes": {
+    "icon": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

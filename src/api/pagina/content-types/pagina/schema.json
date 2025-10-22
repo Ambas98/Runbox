@@ -1,0 +1,39 @@
+{
+"kind": "collectionType",
+"collectionName": "paginas",
+"info": {
+"singularName": "pagina",
+"pluralName": "paginas",
+"displayName": "Página",
+"description": "Modelo genérico para todas las páginas del sitio (Home, Quienes Somos, Servicios, etc.)."
+},
+"options": {
+"draftAndPublish": true
+},
+"attributes": {
+"Titulo": {
+"type": "string",
+"required": true,
+"unique": true
+},
+"slug": {
+"type": "uid",
+"targetField": "Titulo",
+"required": true
+},
+"SEO": {
+"type": "component",
+"component": "shared.seo",
+"repeatable": false
+},
+"Blocks": {
+"type": "dynamiczone",
+"components": [
+"blocks.bloque-texto",
+"shared.richtext",
+"content.feature",
+"content.team_member",
+"content.coverage_region",
+"content.cta_info_card"
+]
+}}}

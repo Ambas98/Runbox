@@ -1,0 +1,71 @@
+{
+"kind": "singleType",
+"collectionName": "home_pages",
+"info": {
+"singularName": "home-page",
+"pluralName": "home-pages",
+"displayName": "HomePage"
+},
+"options": {
+"draftAndPublish": false
+},
+"attributes": {
+"heroBackgroundImage": {
+"type": "media",
+"multiple": false
+},
+"heroTagline": {
+"type": "string"
+},
+"heroHeading": {
+"type": "string"
+},
+"heroSubheading": {
+"type": "string"
+},
+"heroDescription": {
+"type": "text"
+},
+"heroPrimaryCTA": {
+"type": "string"
+},
+"heroSecondaryCTA": {
+"type": "string"
+},
+"featuresSectionTitle": {
+"type": "string"
+},
+"featuresSectionSubtitle": {
+"type": "text"
+},
+"features": {
+"type": "component",
+"repeatable": true,
+"component": "content.Feature"
+},
+"servicesSection": {
+"type": "dynamiczone",
+"components": [
+"content.Feature",
+"content.CtaInfoCard"
+]
+},
+"ctaSectionBackground": {
+"type": "string"
+},
+"ctaHeading": {
+"type": "string"
+},
+"ctaDescription": {
+"type": "text"
+},
+"ctaButtonText": {
+"type": "string"
+},
+"ctaInfoCards": {
+"type": "component",
+"repeatable": true,
+"component": "content.CtaInfoCard"
+}
+}
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_bloque_textos",
+  "info": {
+    "singularName": "bloque-texto",
+    "pluralName": "bloque-textos",
+    "displayName": "BloqueTexto",
+    "description": "Text block used in PageTemplate"
+  },
+  "attributes": {
+    "Titulo": { "type": "string" },
+    "Texto": { "type": "richtext" },
+    "Imagen": { "type": "media", "multiple": false }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_seguimiento",
+  "info": { "singularName": "pagina-seguimiento", "pluralName": "pagina-seguimientos", "displayName": "PaginaSeguimiento" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "heroBadge": { "type": "string" },
+    "heroHeading": { "type": "string" },
+    "heroDescription": { "type": "text" },
+    "heroBackgroundImage": { "type": "media", "multiple": false },
+
+    "trackingInputPlaceholder": { "type": "string" },
+    "trackingHelpText": { "type": "text" },
+
+    "demoTrackingData": { "type": "json" },
+    "features": { "type": "component", "repeatable": true, "component": "content.feature" },
+
+    "helpSectionTitle": { "type": "string" },
+    "helpSectionText": { "type": "text" }
+  }
+}

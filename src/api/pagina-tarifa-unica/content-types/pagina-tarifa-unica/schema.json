@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_tarifa_unica",
+  "info": { "singularName": "pagina-tarifa-unica", "pluralName": "pagina-tarifa-unicas", "displayName": "PaginaTarifaUnica" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "heroBadge": { "type": "string" },
+    "heroHeading": { "type": "string" },
+    "heroDescription": { "type": "text" },
+    "heroBackgroundImage": { "type": "media", "multiple": false },
+
+    "benefits": { "type": "component", "repeatable": true, "component": "content.feature" },
+
+    "coverageIntroTitle": { "type": "string" },
+    "coverageIntroText": { "type": "text" },
+    "regions": { "type": "component", "repeatable": true, "component": "content.coverage_region" },
+
+    "mapImage": { "type": "media", "multiple": false },
+    "stats": { "type": "json" }
+  }
+}

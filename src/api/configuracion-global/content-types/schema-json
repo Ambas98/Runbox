@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "configuracion_global_s",
+  "info": {
+    "singularName": "configuracion-global",
+    "pluralName": "configuracion-globals",
+    "displayName": "Configuración Global",
+    "description": "Configuración general de la web (SEO, cabecera, pie de página)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Sitename": {
+      "type": "string",
+      "required": true
+    },
+    "MetaDescription": {
+      "type": "text"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

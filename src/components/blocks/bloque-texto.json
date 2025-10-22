@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_bloque_textos",
+  "info": {
+    "displayName": "BloqueTexto",
+    "icon": "text-width",
+    "description": "Un bloque simple para texto enriquecido y títulos.",
+    "category": "Blocks"
+  },
+  "options": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Texto": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

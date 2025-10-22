@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_seo",
+  "info": {
+    "singularName": "seo",
+    "pluralName": "seos",
+    "displayName": "Seo",
+    "description": "SEO metadata component"
+  },
+  "attributes": {
+    "metaTitle": { "type": "string" },
+    "metaDescription": { "type": "text" },
+    "metaImage": { "type": "media", "multiple": false },
+    "metaKeywords": { "type": "json" }
+  }
+}

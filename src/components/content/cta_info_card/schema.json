@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_content_cta_info_cards",
+  "info": {
+    "singularName": "cta_info_card",
+    "pluralName": "cta_info_cards",
+    "displayName": "CtaInfoCard",
+    "description": "Cards used in CTA section"
+  },
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "linkText": { "type": "string" },
+    "linkUrl": { "type": "string" }
+  }
+}

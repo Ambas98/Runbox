@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paginas",
+  "info": {
+    "singularName": "pagina",
+    "pluralName": "paginas",
+    "displayName": "Páginas",
+    "description": "Páginas principales del sitio con zonas dinámicas para el contenido."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Titulo"
+    },
+    "Blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.bloque-texto"
+      ]
+    }
+  }
+}

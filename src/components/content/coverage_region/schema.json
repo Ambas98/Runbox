@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_coverage_regions",
+  "info": {
+    "singularName": "coverage_region",
+    "pluralName": "coverage_regions",
+    "displayName": "CoverageRegion",
+    "description": "Regional coverage details"
+  },
+  "attributes": {
+    "region": { "type": "string" },
+    "mainCities": { "type": "json" },
+    "allCities": { "type": "json" },
+    "delivery": { "type": "string" },
+    "color": { "type": "string" }
+  }
+}

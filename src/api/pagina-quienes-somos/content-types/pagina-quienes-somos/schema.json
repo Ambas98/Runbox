@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_quienes_somos",
+  "info": { "singularName": "pagina-quienes-somos", "pluralName": "pagina-quienes-somos-set", "displayName": "PaginaQuienesSomos" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "heroBackgroundImage": { "type": "media", "multiple": false },
+    "heroBadge": { "type": "string" },
+    "heroHeading": { "type": "string" },
+    "heroDescription": { "type": "text" },
+
+    "ourHistoryTitle": { "type": "string" },
+    "ourHistoryContent": { "type": "richtext" },
+
+    "values": { "type": "component", "repeatable": true, "component": "content.value_item" },
+
+    "whyChooseUsTitle": { "type": "string" },
+    "whyChooseUsDescription": { "type": "text" },
+    "whyChooseUsFeatures": { "type": "component", "repeatable": true, "component": "content.feature" },
+
+    "teamTitle": { "type": "string" },
+    "teamSubtitle": { "type": "text" },
+    "team": { "type": "component", "repeatable": true, "component": "content.team_member" },
+
+    "testimonials": { "type": "relation", "relation": "oneToMany", "target": "api::testimonial.testimonial" }
+  }
+}
