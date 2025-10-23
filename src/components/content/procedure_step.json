@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_procedure_steps",
+  "info": {
+    "displayName": "ProcedureStep",
+    "description": "Steps for contact/procedure flow",
+    "category": "Content"
+  },
+  "options": {},
+  "attributes": {
+    "number": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "icon": { "type": "string" },
+    "color": { "type": "string" }
+  }
+}

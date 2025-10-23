@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_value_items",
+  "info": {
+    "displayName": "ValueItem",
+    "description": "Company values like mission, commitment",
+    "category": "Content"
+  },
+  "options": {},
+  "attributes": {
+    "icon": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

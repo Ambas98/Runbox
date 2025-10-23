@@ -38,18 +38,18 @@
 "featuresSectionSubtitle": {
 "type": "text"
 },
-"features": {
-"type": "component",
-"repeatable": true,
-"component": "content.Feature"
-},
-"servicesSection": {
-"type": "dynamiczone",
-"components": [
-"content.Feature",
-"content.CtaInfoCard"
-]
-},
+		"features": {
+			"type": "component",
+			"repeatable": true,
+			"component": "content.feature"
+		},
+		"servicesSection": {
+			"type": "dynamiczone",
+			"components": [
+				"content.feature",
+				"content.cta_info_card"
+			]
+		},
 "ctaSectionBackground": {
 "type": "string"
 },
@@ -62,10 +62,10 @@
 "ctaButtonText": {
 "type": "string"
 },
-"ctaInfoCards": {
-"type": "component",
-"repeatable": true,
-"component": "content.CtaInfoCard"
-}
+		"ctaInfoCards": {
+			"type": "component",
+			"repeatable": true,
+			"component": "content.cta_info_card"
+		}
 }
 }

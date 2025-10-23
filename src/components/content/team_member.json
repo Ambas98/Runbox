@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_content_team_members",
+  "info": {
+    "displayName": "TeamMember",
+    "description": "Team member with photo",
+    "category": "Content"
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" },
+    "position": { "type": "string" },
+    "experience": { "type": "string" },
+    "photo": { "type": "media", "multiple": false }
+  }
+}

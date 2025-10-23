@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonials",
+  "info": {
+    "singularName": "testimonial",
+    "pluralName": "testimonials",
+    "displayName": "Testimonial",
+    "description": "Customer testimonials and reviews"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "company": { "type": "string" },
+    "location": { "type": "string" },
+    "position": { "type": "string" },
+    "testimonialText": { "type": "text", "required": true, "maxLength": 500 },
+    "rating": { "type": "integer", "default": 5 },
+    "avatar": { "type": "media", "multiple": false },
+    "displayOrder": { "type": "integer" },
+    "isActive": { "type": "boolean", "default": true },
+    "testimonialType": { "type": "enumeration", "enum": ["text", "video"], "default": "text" },
+    "videoThumbnail": { "type": "media", "multiple": false },
+    "videoDuration": { "type": "string" },
+    "videoUrl": { "type": "string" },
+    "videoDescription": { "type": "text" }
+  }
+}

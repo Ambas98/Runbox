@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_seo",
+  "info": {
+    "displayName": "Seo",
+    "description": "SEO metadata component",
+    "category": "Shared"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": { "type": "string" },
+    "metaDescription": { "type": "text" },
+    "metaImage": { "type": "media", "multiple": false },
+    "metaKeywords": { "type": "json" }
+  }
+}

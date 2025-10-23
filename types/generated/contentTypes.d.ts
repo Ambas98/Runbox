@@ -467,6 +467,46 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
+  collectionName: 'blog_posts';
+  info: {
+    description: 'Modelo para art\u00EDculos del blog.';
+    displayName: 'Blog Post';
+    pluralName: 'blog-posts';
+    singularName: 'blog-post';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    author: Schema.Attribute.String;
+    category: Schema.Attribute.String;
+    content: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.Date;
+    excerpt: Schema.Attribute.Text;
+    featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    featuredImage: Schema.Attribute.Media;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-post.blog-post'
+    > &
+      Schema.Attribute.Private;
+    meta: Schema.Attribute.JSON;
+    publishedAt: Schema.Attribute.DateTime;
+    readTime: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'title'>;
+    tags: Schema.Attribute.JSON;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiConfiguracionGlobalConfiguracionGlobal
   extends Struct.SingleTypeSchema {
   collectionName: 'configuracion_globals';
@@ -497,10 +537,216 @@ export interface ApiConfiguracionGlobalConfiguracionGlobal
   };
 }
 
+export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
+  collectionName: 'home_pages';
+  info: {
+    displayName: 'HomePage';
+    pluralName: 'home-pages';
+    singularName: 'home-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaButtonText: Schema.Attribute.String;
+    ctaDescription: Schema.Attribute.Text;
+    ctaHeading: Schema.Attribute.String;
+    ctaInfoCards: Schema.Attribute.Component<'content.cta_info_card', true>;
+    ctaSectionBackground: Schema.Attribute.String;
+    features: Schema.Attribute.Component<'content.feature', true>;
+    featuresSectionSubtitle: Schema.Attribute.Text;
+    featuresSectionTitle: Schema.Attribute.String;
+    heroBackgroundImage: Schema.Attribute.Media;
+    heroDescription: Schema.Attribute.Text;
+    heroHeading: Schema.Attribute.String;
+    heroPrimaryCTA: Schema.Attribute.String;
+    heroSecondaryCTA: Schema.Attribute.String;
+    heroSubheading: Schema.Attribute.String;
+    heroTagline: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page.home-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    servicesSection: Schema.Attribute.DynamicZone<
+      ['content.feature', 'content.cta_info_card']
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPaginaContactoPaginaContacto
+  extends Struct.SingleTypeSchema {
+  collectionName: 'pagina_contactos';
+  info: {
+    description: 'Modelo para la p\u00E1gina de Contacto.';
+    displayName: 'P\u00E1gina Contacto';
+    pluralName: 'pagina-contactos';
+    singularName: 'pagina-contacto';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contactInfo: Schema.Attribute.Component<'content.contact_info_item', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    formIntroText: Schema.Attribute.Text;
+    guarantees: Schema.Attribute.Component<'content.cta_info_card', true>;
+    heroBackgroundImage: Schema.Attribute.Media;
+    heroBadge: Schema.Attribute.String;
+    heroDescription: Schema.Attribute.Text;
+    heroHeading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pagina-contacto.pagina-contacto'
+    > &
+      Schema.Attribute.Private;
+    procedureIntro: Schema.Attribute.Text;
+    procedureSteps: Schema.Attribute.Component<'content.procedure_step', true>;
+    procedureTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPaginaQuienesSomosPaginaQuienesSomos
+  extends Struct.SingleTypeSchema {
+  collectionName: 'pagina_quienes_somos';
+  info: {
+    displayName: 'PaginaQuienesSomos';
+    pluralName: 'pagina-quienes-somos-set';
+    singularName: 'pagina-quienes-somos';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroBackgroundImage: Schema.Attribute.Media;
+    heroBadge: Schema.Attribute.String;
+    heroDescription: Schema.Attribute.Text;
+    heroHeading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pagina-quienes-somos.pagina-quienes-somos'
+    > &
+      Schema.Attribute.Private;
+    ourHistoryContent: Schema.Attribute.RichText;
+    ourHistoryTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    team: Schema.Attribute.Component<'content.team_member', true>;
+    teamSubtitle: Schema.Attribute.Text;
+    teamTitle: Schema.Attribute.String;
+    testimonials: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testimonial.testimonial'
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'content.value_item', true>;
+    whyChooseUsDescription: Schema.Attribute.Text;
+    whyChooseUsFeatures: Schema.Attribute.Component<'content.feature', true>;
+    whyChooseUsTitle: Schema.Attribute.String;
+  };
+}
+
+export interface ApiPaginaSeguimientoPaginaSeguimiento
+  extends Struct.SingleTypeSchema {
+  collectionName: 'pagina_seguimiento';
+  info: {
+    displayName: 'PaginaSeguimiento';
+    pluralName: 'pagina-seguimientos';
+    singularName: 'pagina-seguimiento';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    demoTrackingData: Schema.Attribute.JSON;
+    features: Schema.Attribute.Component<'content.feature', true>;
+    helpSectionText: Schema.Attribute.Text;
+    helpSectionTitle: Schema.Attribute.String;
+    heroBackgroundImage: Schema.Attribute.Media;
+    heroBadge: Schema.Attribute.String;
+    heroDescription: Schema.Attribute.Text;
+    heroHeading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pagina-seguimiento.pagina-seguimiento'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    trackingHelpText: Schema.Attribute.Text;
+    trackingInputPlaceholder: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPaginaTarifaUnicaPaginaTarifaUnica
+  extends Struct.SingleTypeSchema {
+  collectionName: 'pagina_tarifa_unica';
+  info: {
+    displayName: 'PaginaTarifaUnica';
+    pluralName: 'pagina-tarifa-unicas';
+    singularName: 'pagina-tarifa-unica';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    benefits: Schema.Attribute.Component<'content.feature', true>;
+    coverageIntroText: Schema.Attribute.Text;
+    coverageIntroTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroBackgroundImage: Schema.Attribute.Media;
+    heroBadge: Schema.Attribute.String;
+    heroDescription: Schema.Attribute.Text;
+    heroHeading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pagina-tarifa-unica.pagina-tarifa-unica'
+    > &
+      Schema.Attribute.Private;
+    mapImage: Schema.Attribute.Media;
+    publishedAt: Schema.Attribute.DateTime;
+    regions: Schema.Attribute.Component<'content.coverage_region', true>;
+    stats: Schema.Attribute.JSON;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPaginaPagina extends Struct.CollectionTypeSchema {
   collectionName: 'paginas';
   info: {
-    displayName: 'Pagina';
+    description: 'Modelo gen\u00E9rico para todas las p\u00E1ginas del sitio (Home, Quienes Somos, Servicios, etc.).';
+    displayName: 'P\u00E1gina';
     pluralName: 'paginas';
     singularName: 'pagina';
   };
@@ -508,7 +754,16 @@ export interface ApiPaginaPagina extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Blocks: Schema.Attribute.DynamicZone<['blocks.bloque-texto']>;
+    Blocks: Schema.Attribute.DynamicZone<
+      [
+        'blocks.bloque-texto',
+        'shared.richtext',
+        'content.feature',
+        'content.team_member',
+        'content.coverage_region',
+        'content.cta_info_card',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -519,11 +774,61 @@ export interface ApiPaginaPagina extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    SEO: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'Titulo'> & Schema.Attribute.Required;
-    Titulo: Schema.Attribute.String;
+    Titulo: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
+  collectionName: 'testimonials';
+  info: {
+    description: 'Customer testimonials and reviews';
+    displayName: 'Testimonial';
+    pluralName: 'testimonials';
+    singularName: 'testimonial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    avatar: Schema.Attribute.Media;
+    company: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    displayOrder: Schema.Attribute.Integer;
+    isActive: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testimonial.testimonial'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    position: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    rating: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<5>;
+    testimonialText: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 500;
+      }>;
+    testimonialType: Schema.Attribute.Enumeration<['text', 'video']> &
+      Schema.Attribute.DefaultTo<'text'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    videoDescription: Schema.Attribute.Text;
+    videoDuration: Schema.Attribute.String;
+    videoThumbnail: Schema.Attribute.Media;
+    videoUrl: Schema.Attribute.String;
   };
 }
 
@@ -1038,8 +1343,15 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::blog-post.blog-post': ApiBlogPostBlogPost;
       'api::configuracion-global.configuracion-global': ApiConfiguracionGlobalConfiguracionGlobal;
+      'api::home-page.home-page': ApiHomePageHomePage;
+      'api::pagina-contacto.pagina-contacto': ApiPaginaContactoPaginaContacto;
+      'api::pagina-quienes-somos.pagina-quienes-somos': ApiPaginaQuienesSomosPaginaQuienesSomos;
+      'api::pagina-seguimiento.pagina-seguimiento': ApiPaginaSeguimientoPaginaSeguimiento;
+      'api::pagina-tarifa-unica.pagina-tarifa-unica': ApiPaginaTarifaUnicaPaginaTarifaUnica;
       'api::pagina.pagina': ApiPaginaPagina;
+      'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
